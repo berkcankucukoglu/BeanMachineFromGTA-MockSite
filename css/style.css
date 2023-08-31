@@ -195,4 +195,41 @@ font-size: 55px;
 
 .footer .social > * {
   margin-right: 30px;
+  margin-top: 15px;
+}
+
+/* Mobile */
+@media(max-width: 768px){
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+  .navbar a{
+    padding: 10px 10px;
+    margin: 0 3px;
+  }
+
+  .flex-items{
+    flex-direction: column;
+  }
+  .flex-items > div {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  .flex-columns .column, .flex-grid .column{
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .flex-grid .column img{
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+
+  .team img{
+    width: 65%;
+  }
 }
