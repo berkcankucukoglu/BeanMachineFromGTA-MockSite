@@ -57,8 +57,8 @@ img {
   margin: 0 5px;
 }
 .navbar a:hover {
-  border-bottom: #B49653 2px solid;
-  color: #B49653;
+  border-bottom: #b49653 2px solid;
+  color: #b49653;
 }
 .navbar ul {
   display: flex;
@@ -126,9 +126,73 @@ font-size: 55px;
 
 .icons i{
   min-width: 75px;
-  background-color: #B49653;
+  background-color: #b49653;
   color: #fff;
   padding: 1rem;
   border-radius: 50%;
   margin-bottom: 15px;
+}
+
+/* Places & Team */
+.places img:hover {
+  opacity: 0.75;
+}
+
+.team img{
+  border-radius: 15px;
+  border: #b49653 solid 2px;
+}
+
+/* Callback form */
+.callback-form {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.callback-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.callback-form .form-control {
+  margin-bottom: 15px;
+}
+
+.callback-form input {
+  width: 100%;
+  padding: 4px;
+  height: 40px;
+  border: #f4f4f4 solid 1px;
+  border-radius: 5px;
+}
+
+.callback-form input:focus{
+  outline: #b49653 solid 2px;
+}
+
+.callback-form .btn {
+  padding: 12px 0;
+  margin-top: 20px;
+}
+
+/* Footer */
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 125px;
+}
+
+.footer a{
+  color: #b49653;
+}
+
+.footer a:hover{
+  color: #333;
+}
+
+.footer .social > * {
+  margin-right: 30px;
 }
