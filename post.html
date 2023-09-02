@@ -17,7 +17,7 @@
 
   <body id="post">
     <header class="hero blog">
-      <div id="navbar" class="navbar">
+      <div id="navbar" class="navbar top">
         <h1 class="logo">
           <span class="text-primary"><i class="fas fa-mug-hot"></i>Bean</span
           >Machine
@@ -47,16 +47,20 @@
           <i class="fas fa-user"></i> Posted By
           <strong>Matthew Reynolds</strong> | April 19 2023
         </p>
-        <p>We've recently refreshed our pricing to offer you even more value. Below, you'll find an updated list of our products with their new prices. Thank you for choosing us for your coffee needs, and we hope you continue to enjoy our exceptional offerings!
+        <p>
+          We've recently refreshed our pricing to offer you even more value.
+          Below, you'll find an updated list of our products with their new
+          prices. Thank you for choosing us for your coffee needs, and we hope
+          you continue to enjoy our exceptional offerings!
         </p>
         <div class="row bg-light">
-            <img src="./images/drinks/drink-1.jpg" alt="dr_1">
-            <img src="./images/drinks/drink-2.jpg" alt="dr_2">
-            <img src="./images/drinks/drink-3.jpg" alt="dr_3">
-            <img src="./images/drinks/drink-4.jpg" alt="dr_4">
-            <img src="./images/drinks/drink-5.jpg" alt="dr_5">
-            <img src="./images/drinks/drink-6.jpg" alt="dr_6">
-            <img src="./images/drinks/drink-7.jpg" alt="dr_7">
+          <img src="./images/drinks/drink-1.jpg" alt="dr_1" />
+          <img src="./images/drinks/drink-2.jpg" alt="dr_2" />
+          <img src="./images/drinks/drink-3.jpg" alt="dr_3" />
+          <img src="./images/drinks/drink-4.jpg" alt="dr_4" />
+          <img src="./images/drinks/drink-5.jpg" alt="dr_5" />
+          <img src="./images/drinks/drink-6.jpg" alt="dr_6" />
+          <img src="./images/drinks/drink-7.jpg" alt="dr_7" />
         </div>
       </section>
     </main>
@@ -72,5 +76,26 @@
       <p>Copyright &copy; 2023 - Bean Machine - Los Santos Coffee Company</p>
       <p>Created By Berkcan Küçükoğlu - //*For training purposes only*//</p>
     </footer>
+
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 50);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+    </script>
   </body>
 </html>

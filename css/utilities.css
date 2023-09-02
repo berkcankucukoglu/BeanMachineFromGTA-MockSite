@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* Text Colors */
 .text-primary {
   color: #b49653;
